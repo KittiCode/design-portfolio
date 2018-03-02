@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+.project{
+    padding: 15px 35px;
+    border-radius: 3px;
+    background: RGB(239,239,239);
+    width:14%;
+    margin:23px 0.5% ;
+}
+.tab{
+    text-align: center;
+}

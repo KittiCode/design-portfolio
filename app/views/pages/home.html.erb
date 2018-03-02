@@ -3,15 +3,74 @@
 <head>
 	<title>Kitti Portfolio</title>
 	<style type="text/css" src="port.css"></style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
-	<h1>Hi</h1>
-	<p>lalala</p>
-</body>
+<body class="container">
+  <div class="container-fluid">
+	  <h1>Logo here</h1>
+	</div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+<!--TAB-->
+        <div class="col-md-10">
+          <div class="tab">
+          <button class="tablinks project" onclick="openCity(event, 'Logo')">Logo</button>
+          <button class="tablinks project" onclick="openCity(event, 'Dog')">Dog</button>
+          <button class="tablinks project" onclick="openCity(event, 'Tokyo')">Illustration</button>
+          </div>  
+          
+          <div class="container">
+            <div id="Logo" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+              
+            <div id="Dog" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p> 
+            </div>
+              
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+<!--for container row-->
 
-<li>
-    <ul>item1</ul>
-    <ul>item2</ul>
-    <ul>item13</ul>
-</li>
+
+
+
+<script>
+function openCity(evt, project) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(project).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<!--TAB-->
+
+</body>
 </html>
