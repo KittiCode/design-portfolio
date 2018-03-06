@@ -18,13 +18,13 @@
 //= require_tree .
 
 
-function openCity(evt, project) {
+function openNav(evt, project) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tabcontent-nav");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks-nav");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -32,13 +32,15 @@ function openCity(evt, project) {
     evt.currentTarget.className += " active";
 }
 
-function openNav(evt, project) {
+
+
+function openProject(evt, project) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("navcontent");
+    tabcontent = document.getElementsByClassName("tabcontent-project");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("navlinks");
+    tablinks = document.getElementsByClassName("tablinks-project");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
