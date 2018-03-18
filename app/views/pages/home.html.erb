@@ -25,8 +25,8 @@
         <nav class="navbar navbar-default">
             <ul class="nav navbar-nav">
               <li class="active"><a href="">Home</a></li>
-              <li><button class="tablinks-nav" onclick="openNav(event,'Projects')">Projects</button></li>
-              <li><button class="tablinks-nav" onclick="openNav(event,'About')">About</button></li>
+              <li><button class="tablinks-nav" onclick="openNav(event,'ProjectsTab')">Projects</button></li>
+              <li><button class="tablinks-nav" onclick="closeKitti(); openNav(event,'About');">About</button></li>
             </ul>
         </nav>
       </div>
@@ -40,10 +40,10 @@
         <div class="col-md-8" id="mainbox">
           
   <!--Projects-->
-          <div id="Projects" class="navcontent"> 
-            <div class="tab">
+          <div id="Projects" class="navcontent-nav" > 
+            <div class="tab" id="ProjectsTab">
               <h2>Projects</h2>
-              <button class="tablinks-project project" onclick="openProject(event, 'Logo')">Logo</button>
+              <button class="tablinks-project project" onclick="openProject(event, 'Logo');">Logo</button>
               <button class="tablinks-project project" onclick="openProject(event, 'Dog')">Dog</button>
               <button class="tablinks-project project" onclick="openProject(event, 'Illustration')">Illustration</button>
             </div>
@@ -51,13 +51,13 @@
           <%= render "pages/about.html.erb"%>
           <%= render "projects/logo.html.erb"%>
           
-              
-            <div id="Dog" class="tabcontent-project">
+          
+            <div id="Dog" class="tabcontent-project" style="display:none;">
               <h3>Dog Showcase</h3>
               <p>Paris is the capital of France.</p> 
             </div>
               
-            <div id="Illustration" class="tabcontent-project">
+            <div id="Illustration" class="tabcontent-project" style="display:none;">
               <h3>Illustration Showcase</h3>
               <p>Tokyo is the capital of Japan.</p>
             </div>

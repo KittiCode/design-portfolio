@@ -47,3 +47,8 @@ function openProject(evt, project) {
     document.getElementById(project).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+function closeKitti(){
+    jQuery("#Projects").children().hide();
+}
