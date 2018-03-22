@@ -5,71 +5,46 @@
 	<style type="text/css" src="port.css"></style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<br><br>
 <body class="container">
   
   <div class="container">
     <div class="row">
       <div class="col-md-1 sidebar"></div>
-      <div class="col-md-2"><h3>Logo here</h3></div>
+      <div class="col-md-2"><%= image_tag("sitelogo", alt: "logo-11")%></div>
       <div class="col-md-9"></div>
     </div>
-    
     <br></br>
     <br></br>
-    
-    
       <!--navbar-->
     <div class="row">
-      <div class="col-md-1"></div>
       <div class="col-md-2">
-        <nav class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="">Home</a></li>
-              <li><button class="tablinks-nav" onclick="openNav(event,'ProjectsTab')">Projects</button></li>
-              <li><button class="tablinks-nav" onclick="closeKitti(); openNav(event,'About');">About</button></li>
-            </ul>
-        </nav>
+        <%= render "pages/nav" %>
       </div>
-      
-      
-      
-      <!--<div id="Projects" class="tabcontent">This is a project content</div>-->
-      
-      
-<!--TAB-->
-        <div class="col-md-8" id="mainbox">
-          
-  <!--Projects-->
-          <div id="Projects" class="navcontent-nav" > 
+      <div class="col-md-10" id="mainbox">
+        <div id="TabBox" class="navcontent-nav"> 
+          <%= render "pages/hometab.html.erb"%>  
+        
+          <div id="ProjectsBox" style="display:none;">
             <div class="tab" id="ProjectsTab">
-              <h2>Projects</h2>
-              <button class="tablinks-project project" onclick="openProject(event, 'Logo');">Logo</button>
-              <button class="tablinks-project project" onclick="openProject(event, 'Dog')">Dog</button>
-              <button class="tablinks-project project" onclick="openProject(event, 'Illustration')">Illustration</button>
+                <h2>Projects</h2>
+                <button class="tablinks-project project" onclick="openProject(event, 'Logo');">Logo</button>
+                <button class="tablinks-project project" onclick="openProject(event, 'Infinity')">Infinity War</button>
+                <button class="tablinks-project project" onclick="openProject(event, 'Illustration')">Illustration</button>
             </div>
-            
+            <%= render "projects/logo.html.erb"%>
+          </div> 
           <%= render "pages/about.html.erb"%>
-          <%= render "projects/logo.html.erb"%>
-          
-          
-            <div id="Dog" class="tabcontent-project" style="display:none;">
-              <h3>Dog Showcase</h3>
-              <p>Paris is the capital of France.</p> 
-            </div>
-              
-            <div id="Illustration" class="tabcontent-project" style="display:none;">
-              <h3>Illustration Showcase</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
+          <%= render "projects/infinity.html.erb"%>
+        
+            ~
+          <div id="Illustration" class="tabcontent-project" style="display:none;">
+            <h3>Illustration Showcase</h3>
+            <p>Tokyo is the capital of Japan.</p>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
-<!--for container row-->
-
-
-
-<!--TAB-->
-
+  </div> 
 </body>
 </html>

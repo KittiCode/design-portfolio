@@ -18,7 +18,7 @@
 //= require_tree .
 
 
-function openNav(evt, project) {
+function openTab(evt, project) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent-nav");
     for (i = 0; i < tabcontent.length; i++) {
@@ -50,5 +50,5 @@ function openProject(evt, project) {
 
 
 function closeKitti(){
-    jQuery("#Projects").children().hide();
+    jQuery("#TabBox").children().hide();
 }
