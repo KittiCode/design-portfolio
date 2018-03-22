@@ -22,15 +22,18 @@
         <%= render "pages/nav" %>
       </div>
       <div class="col-md-10" id="mainbox">
+        <br><br>
         <div id="TabBox" class="navcontent-nav"> 
           <%= render "pages/hometab.html.erb"%>  
         
           <div id="ProjectsBox" style="display:none;">
             <div class="tab" id="ProjectsTab">
                 <h2>Projects</h2>
-                <button class="tablinks-project project" onclick="openProject(event, 'Logo');">Logo</button>
-                <button class="tablinks-project project" onclick="openProject(event, 'Infinity')">Infinity War</button>
-                <button class="tablinks-project project" onclick="openProject(event, 'Illustration')">Illustration</button>
+                <div class="row">
+                  <div class="tablinks-project project col-md-4 " onclick="openProject(event, 'Logo');">Logo</div>
+                  <div class="tablinks-project project col-md-4" onclick="openProject(event, 'Infinity')">Infinity War</div>
+                  <div class="tablinks-project project col-md-4" onclick="openProject(event, 'Illustration')">Illustration</div>
+                </div>
             </div>
             <%= render "projects/logo.html.erb"%>
           </div> 

@@ -19,11 +19,11 @@ html{
   background:#E6E6E6;
 }
 .project{
-    padding: 15px 35px;
-    border-radius: 3px;
+    border-bottom: 5px RGB(204,204,204) solid;
     background: RGB(239,239,239);
-    width:14%;
-    margin:23px 0.5% ;
+    font-size: 20px;
+    padding-bottom: 14px;
+    
 }
 .tab{
     text-align: center;
@@ -51,4 +51,12 @@ html{
     border-radius: 10%;
     padding: 0px;
     box-shadow: 5px 5px 5px RGB(156,156,156)
+}
+
+
+.right-border{
+  border-right: 6px RGB(204,204,204) solid;
+}
+.active-tab{
+ border-bottom: 6px orange solid;
 }

@@ -24,12 +24,12 @@ function openTab(evt, project) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks-nav");
+    tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
     }
     document.getElementById(project).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " active-tab";
 }
 
 
@@ -42,10 +42,10 @@ function openProject(evt, project) {
     }
     tablinks = document.getElementsByClassName("tablinks-project");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
     }
     document.getElementById(project).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " active-tab";
 }
 
 
