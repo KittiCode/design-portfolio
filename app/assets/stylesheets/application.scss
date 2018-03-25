@@ -15,8 +15,13 @@
  */
 @import "bootstrap";
 
+
 html{
   background:#E6E6E6;
+}
+
+p{
+  font-size: 20px;
 }
 .project{
     border-bottom: 5px RGB(204,204,204) solid;
@@ -68,4 +73,12 @@ html{
 
 .right-border{
   border-right: 6px RGB(204,204,204) solid;
+}
+
+
+.intro{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.8;
 }
