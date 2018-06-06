@@ -1,0 +1,13 @@
+.footer{
+    background: RGB(51,51,51);
+    min-height: 20em;
+    margin-top: 30px;
+    
+}
+.snsicons{
+    margin-top: 30px;
+}
+.snsicon{
+    height: 30px;
+    margin: 20px;
+}

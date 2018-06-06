@@ -4,15 +4,26 @@
 	<title>Kitti Portfolio</title>
 	<style type="text/css" src="port.css"></style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+	
+
 </head>
 <br><br>
-<body class="container">
+<body>
+  <div class="container">
   
   <div class="container">
     <div class="row">
       <div class="col-md-1 sidebar"></div>
       <div class="col-md-2"><%= image_tag("sitelogo", alt: "logo-11")%></div>
-      <div class="col-md-9"></div>
+      <div class="col-md-9">
+ <%= render "pages/icon.html.erb"%>  
+<!--<img src="assets/facebook-boot.svg"></img>-->
+        </div>
+      </div>
     </div>
     <br></br>
     <br></br>
@@ -56,5 +67,6 @@
       </div>
     </div>
   </div> 
+  </div>
 </body>
 </html>

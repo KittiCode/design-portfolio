@@ -1,0 +1,151 @@
+#facebook{
+    background-image: url('facebook-01.svg');
+    transition: 1s;
+    width: 30px;
+    height: 30px;
+}
+#facebook:hover{
+    background-image: url('facebook-blue-01.svg');
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/*icon transition*/
+
+
+.snsicons ul{
+/*    margin:0;*/
+/*    padding:0;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+float: left;
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+}
+
+.snsicons ul li{
+    display:inline-block;
+    background:black;
+    border-radius: 16px;
+    margin: 0px 30px;
+    
+}
+
+.snsicons a{
+    color:white;
+}
+
+/*facebook*/
+.snsicons ul li:nth-child(1){
+    background: RGB(60,60,60);
+    padding: 8px 13px;
+}
+
+/*linkedin*/
+.snsicons ul li:nth-child(2){
+    background: RGB(60,60,60);
+    padding: 8px 12px;
+}
+/*Youtube */
+.snsicons ul li:nth-child(3){
+    background: RGB(60,60,60);
+    padding: 8px 10px;
+}
+/*Google*/
+.snsicons ul li:nth-child(4){
+    background: RGB(60,60,60);
+}
+
+.snsicons ul li:hover:nth-child(1){
+    background: RGB(59,89,152);
+}
+
+/*linkedin*/
+.snsicons ul li:hover:nth-child(2){
+    background:RGB(0,119,181);;
+}
+/*Youtube */
+.snsicons ul li:hover:nth-child(3){
+    background: RGB(255,50,0);
+}
+/*Google*/
+.snsicons ul li:hover:nth-child(4){
+    background: RGB(219, 50, 54);
+}
+
+/*.snsicons ul li:before{*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height:100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: white;*/
+/*    border-radius:50%;*/
+/*    transform: scale(0);*/
+/*    transition: .5s ease-in-out;*/
+/*}*/
+
+/*.snsicons ul li:hover:before{*/
+/*    transform: scale(1);*/
+/*    }*/
+    
+/*.snsicons ul li:hover{*/
+/*    color: #fff;*/
+/*    background:blue;*/
+/*}*/

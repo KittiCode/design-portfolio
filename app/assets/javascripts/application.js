@@ -52,3 +52,9 @@ function openProject(evt, project) {
 function closeKitti(){
     jQuery("#TabBox").children().hide();
 }
+
+
+function popup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
